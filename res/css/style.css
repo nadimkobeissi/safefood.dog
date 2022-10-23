@@ -78,6 +78,10 @@ div#main div#footer {
 	bottom: 0;
 	text-align: center;
 	font-size: 0.8em;
-	width: 100%;
+	width: 80%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	opacity: 0.5;
 }
