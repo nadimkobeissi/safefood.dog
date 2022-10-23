@@ -15,9 +15,7 @@ div#main {
 	position: relative;
 }
 
-div#main div#header {
-
-}
+div#main div#header {}
 
 div#main div#header img#icon {
 	width: 128px;
@@ -31,9 +29,7 @@ div#main div#header h1 {
 	bottom: 50px;
 }
 
-div#main div#search {
-
-}
+div#main div#search {}
 
 div#main div#search input#searchbar {
 	margin: 0 auto;
