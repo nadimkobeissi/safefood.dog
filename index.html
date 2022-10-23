@@ -2,9 +2,53 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>safefood.dog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+		<meta property="article:publisher" content="https://safefood.dog" />
+		<meta property="og:site_name" content="SafeFood.dog" />
+		<meta property="og:type" content="website" />
+		<meta name="author" content="Nadim Kobeissi">
+		<meta name="twitter:site" content="@kaepora" />
+		<meta name="twitter:creator" content="@kaepora" />
+		<meta name="twitter:card" content="summary" />
+		<meta property="og:title" content="SafeFood.dog" />
+		<meta name="twitter:text:title" content="SafeFood.dog" />
+		<meta name="description" content="SafeFood.dog is an online resource that provides a quick search functionality, allowing visitors to determine whether certain foods are safe for dogs or not. All information includes citations from expert sources.">
+		<meta property="og:description" content="SafeFood.dog is an online resource that provides a quick search functionality, allowing visitors to determine whether certain foods are safe for dogs or not. All information includes citations from expert sources." />
+		<meta property="og:image" content="https://safefood.dog/res/img/icon.png" />
+		<meta name="twitter:image" content="https://safefood.dog/res/img/icon.png" />
+		<meta property="og:url" content="https://safefood.dog" />
+		<link rel="stylesheet" href="res/css/style.css">
+		<script src="res/js/dist/fuse.js"></script>
+		<script src="res/js/dist/mustache.js"></script>
+		<script src="res/js/compendium.js"></script>
+		<script src="res/js/search.js"></script>
+		<link rel="icon" type="image/png" href="res/img/icon.png" />
+		<title>SafeFood.dog: Food Safety for Dogs</title>
 	</head>
 	<body>
-		Woof!
+		<div id="main">
+			<div id="header">
+				<img src="res/img/icon.png" alt="" id="icon" />
+				<h1>SafeFood.dog</h1>
+			</div>
+			<div id="search">
+				<p>
+					SafeFood.dog is an online resource that provides a quick search functionality, allowing visitors to determine whether certain foods are safe for dogs or not. All information includes citations from expert sources.
+				</p>
+				<input type="text" id="searchbar" placeholder="Enter food name..." />
+			</div>
+			<script id="resultTemplate" type="x-tmpl-mustache">
+				<div class="result" data-safety={{safety}}>
+					<h2>{{name}}</h2>
+					<p class="details">{{details}}</p>
+					<p class="source">Source: <a href="{{source.url}}">{{source.name}}</a> (checked on {{source.date}})</p>
+				</div>
+			</script>
+			<div id="results">
+			</div>
+			<div id="footer">
+				<p>This public service project is maintaned by <a href="https://nadim.computer">Nadim Kobeissi</a>.</p>
+			</div>
+		</div>
 	</body>
 </html>

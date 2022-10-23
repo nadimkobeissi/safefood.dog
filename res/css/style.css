@@ -1,0 +1,87 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+div#main {
+	margin: 0 auto;
+	width: 90vw;
+	min-height: 50vh;
+	max-width: 700px;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 20px;
+	position: relative;
+}
+
+div#main div#header {
+
+}
+
+div#main div#header img#icon {
+	width: 128px;
+	height: auto;
+	display: inline;
+}
+
+div#main div#header h1 {
+	display: inline-block;
+	position: relative;
+	bottom: 50px;
+}
+
+div#main div#search {
+
+}
+
+div#main div#search input#searchbar {
+	margin: 0 auto;
+	padding: 10px;
+	display: block;
+	width: 80%;
+}
+
+div#main div#results {
+	margin-bottom: 50px;
+	height: 50vh;
+}
+
+div#main div#results div.result {
+	padding: 5px 20px 10px 20px;
+	border-radius: 20px;
+	margin: 20px auto;
+	width: 90%;
+}
+
+div#main div#results div.result p.source {
+	font-style: italic;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+div#main div#results div.result[data-safety="3"] {
+	background-color: rgba(000, 255, 0, 0.2);
+}
+
+div#main div#results div.result[data-safety="2"] {
+	background-color: rgba(255, 111, 0, 0.2);
+}
+
+div#main div#results div.result[data-safety="1"] {
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+div#main div#results div.result[data-safety="0"] {
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+div#main div#footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	font-size: 0.8em;
+	width: 100%;
+	opacity: 0.5;
+}
